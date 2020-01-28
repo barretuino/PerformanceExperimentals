@@ -19,19 +19,19 @@ public class Lambda {
 		
 		long inicio = System.currentTimeMillis();
 		imprimirItensB(lista);
-		System.out.println("ResoluÁ„o TÌpica - ExecuÁ„o levou " + (System.currentTimeMillis() - inicio) + " ms");
+		System.out.println("Resolu√ß√£o T√≠pica - Execu√ß√£o levou " + (System.currentTimeMillis() - inicio) + " ms");
 		
 		inicio = System.currentTimeMillis();
 		imprimirItens(lista);
-		System.out.println("Sugest„o Otimizada - Execu„o levou " + (System.currentTimeMillis() - inicio) + " ms");
+		System.out.println("Sugest√£o Otimizada - Execu√ß√£o levou " + (System.currentTimeMillis() - inicio) + " ms");
 		
 		
 	}
 	
 	/**
-	 * SituaÁ„o Problema
+	 * Situa√ß√£o Problema
 	 * Baseado na classe Tarefa, utilizando Tarefa::getTempo, imprima em ordem crescente, 
-	 * posteriormente em ordem decrescente a lista de tarefas informada no mÈtodo imprimirItens
+	 * posteriormente em ordem decrescente a lista de tarefas informada no m√©todo imprimirItens
 	 */
 	class Tarefa {
 		private String titulo;
@@ -64,7 +64,7 @@ public class Lambda {
 		}
 	}
 	
-	//Sugest„o de SoluÁ„o Otimizada
+	//Sugest√£o de Solu√ß√£o Otimizada
 	public static void imprimirItens(List<Tarefa> lista) {		
 		//Imprimir na Ordem Crescente		
 		lista.stream().sorted((a,b)->a.getTempo()>b.getTempo() ? 1 : -1).forEach(System.out::println);		
@@ -73,7 +73,7 @@ public class Lambda {
 		lista.stream().sorted((a,b)->a.getTempo()>b.getTempo() ? -1 : 1).forEach(System.out::println);		
 	}
 	
-	//SoluÁ„o apresentada por um desenvolvedor
+	//Solu√ß√£o apresentada por um desenvolvedor
 	public static void imprimirItensB(List<Tarefa> lista) {
 
 		//crescente
